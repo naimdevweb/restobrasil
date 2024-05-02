@@ -53,7 +53,7 @@ fetch("restaurantBresilien.json")
       <div class="naim"> <div class="accroche" data-aos="fade-up-left"> <p>   ${data.entreprise.phraseAccroche} </p> </div>
 
       </div>   
-      <strong id="decrouvir" class="decouvre"><h2>Decouvrez nos specialités:</h2></strong>
+      <strong id="decrouvir" class="decouvre"><h1>Decouvrez nos specialités:</h1></strong>
 
        <div  class="plat" id="decouvrir"> ${plat} </div> <h1 class="avis"> Les avis:</h1> <div class="infoservice">${service} </div>
         
@@ -61,7 +61,11 @@ fetch("restaurantBresilien.json")
 
       
        
-       <div class="serv"> <div class="service">   ${temoignage} <div class="avantage"> ${data.entreprise.avantagesClients}</div> </div> </div>  `
+       
+      <div class="serv"> <div class="service">   ${temoignage}  </div> </div>
+
+      <div class="avantage"> ${data.entreprise.avantagesClients} </div>
+        `
   }
 
 

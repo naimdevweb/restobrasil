@@ -170,6 +170,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     font-family: "Notable", sans-serif;
   font-weight: 800;
   font-style: normal;
+  text-align: center;
   }
   .btn{
     margin-top: 10px;
@@ -259,7 +260,7 @@ align-items: center;
 
 
 .descrip{
-  color: blue;
+  color: black;
   text-align: center;
   margin: 20px;
   font-size: large;
@@ -289,7 +290,7 @@ align-items: center;
   color:white;
 }
 .infoservice{
-  color: green;
+  color:black;
   font-family: "Russo One", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -323,12 +324,12 @@ align-items: center;
 padding: 10px;
 }
 .prenom{
-  color:blue;
+  color:black;
   font-weight: 800;
 }
 h1{
   font-size: xx-large;
-  color: rgb(255, 217, 0);
+  color:green;
   margin-top: 15px;
 }
 #map{
@@ -336,19 +337,20 @@ h1{
   height: 200px;
 }
 .avantage{
-  color:rgb(255, 255, 2);
- margin: auto;
- font-size: large;
- border: transparent;
- background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  color:black;
+ font-size: x-large;
+ font-weight: 800;
+ border: solid;
  padding: 20px;
  text-align: center;
+ border-radius: 5px;
 }
+.avant{
+  border: solid;
+ text-align: center;
+ border-radius: 5px;
+}
+
 h2{
   color:green;
 }
