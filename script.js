@@ -48,19 +48,22 @@ fetch("restaurantBresilien.json")
 
       document.querySelector(".content").innerHTML +=
       `
-      <div class="hero"> <p class="texte"  > ${data.entreprise.nomCommercial} ${data.entreprise.avantagesClients} ${data.entreprise.texteAppelAction}</p> </div>
+      <div class="hero">  <p class="texte">   ${data.entreprise.nomCommercial}  <button class="btn"> <a href="">${data.entreprise.texteAppelAction}</a> </button>  </div> </p> </div>
       
-      <div class="naim">  <p class="texte" >  ${data.entreprise.phraseAccroche} </p>
+      <div class="naim" > <div class="accroche"> <p  >  ${data.entreprise.phraseAccroche} </p> </div>
 
       </div>   
       
       <strong class="decouvre"><h2>Decouvrez nos specialités:</h2></strong>
-        ${plat} <h1> Les avis:</h1> <div class="infoservice">${service}</div>
+
+       <div class="plat"> ${plat} </div> <h1 class="avis"> Les avis:</h1> <div class="infoservice">${service} </div>
+        
        
 
       
        
-       <div class="serv"> <div class="service">   ${temoignage} </div> </div>  `
+       <div class="serv"> <div class="service">   ${temoignage} <div class="avantage"> ${data.entreprise.avantagesClients}</div> </div> </div>  `
+      
       
   }
 
