@@ -73,6 +73,6 @@ L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}
 }).addTo(map);
 L.marker([43.284121,5.564604]).addTo(map)
     .bindPopup("<h2> Restaurant Tudo De Bom</h2><p>Impasse de l'Agrie, 13400 Aubagne, Marseille</p>")
-    .openPopup();
+    
   
 
