@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@0;1&family=Anton&family=Archivo+Black&family=Black+Ops+One&family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Honk&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lugrasimo&family=Mouse+Memoirs&family=Pacifico&family=Permanent+Marker&family=Pixelify+Sans:wght@400..700&family=Rubik+Glitch+Pop&family=Rubik+Lines&family=Rubik+Mono+One&family=Russo+One&family=Sevillana&family=Style+Script&display=swap');
    *{margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -11,12 +11,12 @@ body{
 }
 
 header{
-    background-color: rgb(192, 255, 192);
+    background-color: rgb(255, 251, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    height: 120px;
+    height: 100px;
     position: sticky;
     top: 0;
     z-index: 90;
@@ -41,6 +41,7 @@ list-style-type: none;
    justify-content: center;
    text-decoration: none;
    color: black;
+   padding: 5px;
 }
 .tel:hover{
     color: blue;
@@ -61,32 +62,35 @@ list-style-type: none;
 .carte:hover{
     color: blue;
 }
+footer{
+  height: 10px;
+}
+.flexpol{
+  
+  margin: 10px;
 
-footer {
-    align-items: center;
-    padding: 20px;
-    color: #000;
-  }
+}
+
   .contact{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: black;
-    gap: 10px;
-    text-decoration: none;
+    flex-wrap: wrap;
+   justify-content: space-between;
+  }
+  
+  .perroquet{
+    width: 120%;
+    height: 300px;
   }
   .contacter:hover{
     color: green;
   }
   
   .cookies{
-    text-align: right;
+    text-align: center;
     color: #000;
+    margin-top: 50px;
   }
-  .titre{
-    text-align: left;
-    color: #000;
-  }
+  
   .smal{
     text-align: center;
     color: #000;
@@ -116,6 +120,10 @@ color: rgb(143, 143, 255);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: 10px;
+  }
+  .telephone:hover{
+    color: blue;
   }
    a{
     text-decoration: none;
@@ -182,20 +190,21 @@ align-items: center;
     font-family: "Russo One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-block: 20px;
-    border-bottom: solid green;
-}
-.flexlimage{
-  width: 80%;
+    border-bottom:solid green ;
+    margin: 8px;
   
 }
-.imgdes{
-  width: 100%;
+.flextout{
+  display: flex;
+  
+justify-content: space-between;
+align-items: center;
 }
+.flexlimage{
+  width: 450px;
+
+}
+
 .texteplat{
   color: green;
   font-size: large;
@@ -205,42 +214,41 @@ align-items: center;
 .descrip{
   color: blue;
   text-align: center;
-  font-size: smaller;
+  margin: 20px;
+  font-size: large;
+  margin-top: 10px;
 
 }
 
-.flextout{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20%;
-  margin: auto;
-  margin-left: 20px;
-  width: 100%;
-  
-}
-.service{
+.serv{
   background-image: url(https://cdn.pixabay.com/photo/2020/01/29/18/49/brazil-4803304_1280.jpg);
   width: 100%;
  height: 500px;
  background-size: cover;
  background-attachment: fixed;
  background-repeat: no-repeat;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  color:#000;
   
-
 }
-.serv{
+.service{
   font-size: large;
   font-weight: 800;
-  color:black;
   font-family: "Black Ops One", system-ui;
   font-weight: 400;
   font-style: normal;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 50px;
+  color:rgb(160, 255, 18);
   
+}
+.infoservice{
+  color: green;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .temoin{
@@ -257,19 +265,38 @@ align-items: center;
  background: rgba(255, 255, 255, 0);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.9px);
--webkit-backdrop-filter: blur(2.9px);
+backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
 border: 1px solid rgba(255, 255, 255, 0.3);
   
 }
 .prenom{
-  color: blue;
+  color:blue;
   font-weight: 800;
 }
 h1{
   font-size: xx-large;
   color: rgb(255, 217, 0);
   margin-top: 15px;
+}
+#map{
+  width: 100%;
+  height: 200px;
+}
+h3{
+  color:green;
+}
+
+.rue{
+  padding: 20px;
+  text-transform: uppercase;
+  color: red;
+}
+.fa-phone{
+  margin-right: 5px;
+}
+.fa-at{
+  margin-right: 5px;
 }
 
 
