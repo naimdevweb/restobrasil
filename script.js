@@ -53,9 +53,9 @@ fetch("restaurantBresilien.json")
 
       document.querySelector(".content").innerHTML +=
       `
-      <div class="hero" data-aos="fade-up-left"> <p class="texte" data-aos="fade-up-left">   ${data.entreprise.nomCommercial}  <button class="btn"> <a  href="#decouvrir"> ${data.entreprise.texteAppelAction}</p>  </a> </button>  </div> 
+      <div class="hero" > <p class="texte" data-aos="flip-left">  ${data.entreprise.nomCommercial}  <button class="btn"> <a  href="#decouvrir"> ${data.entreprise.texteAppelAction}</p>  </a> </button>  </div> 
       
-      <div class="naim"> <div class="accroche" data-aos="fade-up-left"> <p>   ${data.entreprise.phraseAccroche} </p> </div>
+      <div class="naim" data-aos="zoom-out-down"> <div class="accroche" data-aos="flip-left"> <p>   ${data.entreprise.phraseAccroche} </p> </div>
 
       </div>   
       <strong id="decrouvir" class="decouvre"><h1>Decouvrez nos specialités:</h1></strong>
