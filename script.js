@@ -17,7 +17,9 @@ fetch("restaurantBresilien.json")
   // Affiche les données dans la console du navigateur
   let plat = "";
     data.entreprise.plats.forEach((p) => {
-      plat += `<section class="flexplat" >
+      plat += `
+      
+      <section class="flexplat" >
 
       
       
@@ -27,7 +29,7 @@ fetch("restaurantBresilien.json")
 
 
       
-      <div class="flextout">  <h3 >${p.nom}</h3> <div class="descrip" > <p> ${p.description}</p>  </div>  <img  class="flexlimage" data-aos="fade-up-left"   src="${p.image}"/> </div> </div> </section>
+      <div class="flextout">  <h3 >${p.nom}</h3> <div class="descrip" > <p> ${p.description}</p>  </div>  <img  class="flexlimage" data-aos="flip-left"  src="${p.image}"/> </div> </div> </section>
 
       `;
     });
@@ -36,19 +38,22 @@ fetch("restaurantBresilien.json")
     data.entreprise.services.forEach((s) => {
       service += ` ${s.nom} ${s.description}  `;
     });
+    
 
     let temoignage = "";
     data.entreprise.temoignages.forEach((t) => {
       temoignage += `
       
-       <div class="temoin" >  ${t.typeExperience}  <div class="prenom">  ${t.prenom} ${t.note}  </div>  ${t.commentaire} </div>  `;
+       <div class="temoin" >  ${t.typeExperience}  <div class="prenom">  ${t.prenom}  ${t.note} <div  class="fa-sharp fa-solid fa-star fa-solid">  </div> </div>  ${t.commentaire} </div>  `
     });
+  
+    
     
 
 
       document.querySelector(".content").innerHTML +=
       `
-      <div class="hero" data-aos="fade-up-left"> <p class="texte" data-aos="fade-up-left">   ${data.entreprise.nomCommercial}  <button class="btn"> <a  href="#decouvrir"> ${data.entreprise.texteAppelAction}</p>  </a> </button>  </div> </div>
+      <div class="hero" data-aos="fade-up-left"> <p class="texte" data-aos="fade-up-left">   ${data.entreprise.nomCommercial}  <button class="btn"> <a  href="#decouvrir"> ${data.entreprise.texteAppelAction}</p>  </a> </button>  </div> 
       
       <div class="naim"> <div class="accroche" data-aos="fade-up-left"> <p>   ${data.entreprise.phraseAccroche} </p> </div>
 
@@ -57,15 +62,10 @@ fetch("restaurantBresilien.json")
 
        <div  class="plat" id="decouvrir"> ${plat} </div> <h1 class="avis"> Les avis:</h1> <div class="infoservice">${service} </div>
         
-       
-
-      
-       
-       
       <div class="serv"> <div class="service">   ${temoignage}  </div> </div>
 
-      <div class="avantage"> ${data.entreprise.avantagesClients} </div>
         `
+  
   }
 
 
