@@ -386,9 +386,11 @@ h2{
 }
 .fa-phone{
   margin-right: 5px;
+  color: #000;
 }
 .fa-at{
   margin-right: 5px;
+  color: #000;
 }
 #map p{
   font-weight: 800;
